@@ -56,7 +56,7 @@ function se($value) //sql_escape
 			{
 				ee('{"result": 1, "status": "cid undefined"}');
 			}
-			if(!$_POST['price'] || !preg_match('/^\d+(\.\d{1,2})?$/', $_POST['price']))
+			if(!$_POST['price'] || !preg_match('/^\d+(?:\.\d{1,2})?$/', $_POST['price']))
 			{
 				ee('{"result": 1, "status": "price undefined"}');
 			}
